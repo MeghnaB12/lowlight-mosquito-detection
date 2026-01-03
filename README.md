@@ -29,7 +29,7 @@ To adapt the raw Kaggle dataset for YOLO format, the following steps are automat
 
 * Configuration: A dataset.yaml file is dynamically generated to define paths and map class indices to names: ['aegypti', 'albopictus', 'anopheles', 'culex', 'culiseta', 'japonicus/koreicus'].
 
-### 2. Model Architecture (YOLOv8)
+## 2. Model Architecture (YOLOv8)
 
 The model is built on the Ultralytics YOLOv8 framework:
 
@@ -44,7 +44,7 @@ Image Size: 1024 px (to detect small details)
 Batch Size: 16
 Optimizer: Auto (SGD/AdamW)
 
-### 3. Inference & Submission
+## 3. Inference & Submission
 
 * Prediction: The trained model runs inference on the test set with a confidence threshold of 0.30 and IoU threshold of 0.50.
 
@@ -60,7 +60,7 @@ Optimizer: Auto (SGD/AdamW)
 
 # 🏃 Running the Project
 
-### 1. Dependencies
+## 1. Dependencies
 
 This script is designed to run in a Kaggle Notebook with GPU acceleration.
 
@@ -68,13 +68,13 @@ This script is designed to run in a Kaggle Notebook with GPU acceleration.
 pip install ultralytics pandas numpy
 ```
 
-### 2. Dataset
+## 2. Dataset
 
 This model was trained on a mosquito classification dataset as part of a university challenge. The data consists of high-resolution images of mosquitoes and their corresponding bounding box annotations (YOLO format). The classes include Aedes aegypti, Aedes albopictus, Anopheles, Culex, Culiseta, and Japonicus/Koreicus.
 
 Due to privacy and access restrictions, the dataset is not publicly available and is not included in this repository. Therefore, the script cannot be run out-of-the-box without downloading the specific competition data separately and placing it in the correct directory structure.
 
-### 3. Notebook Review
+## 3. Notebook Review
 
 The provided code serves as an end-to-end pipeline:
 
