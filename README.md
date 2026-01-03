@@ -37,12 +37,7 @@ The model is built on the Ultralytics YOLOv8 framework:
 
 * Head: Anchor-free detection head that predicts class probabilities and bounding box coordinates simultaneously.
 
-* Training Configuration:
-
-Epochs: 30
-Image Size: 1024 px (to detect small details)
-Batch Size: 16
-Optimizer: Auto (SGD/AdamW)
+* Training Configuration: Epochs: 30, Image Size: 1024 px (to detect small details), Batch Size: 16, Optimizer: Auto (SGD/AdamW)
 
 ## 3. Inference & Submission
 
